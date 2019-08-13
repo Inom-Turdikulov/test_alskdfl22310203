@@ -1,0 +1,32 @@
+{
+  "name": "Example",
+  "version": "0.0.1",
+  "description": "Example workflow",
+  "author": "You <you@youremail.com>",
+  "license": "MIT",
+  "scripts": {
+    "css": "postcss src/pcss/community.pcss --config postcss.config.js --output css/community.min.css",
+    "css:watch": "postcss src/pcss/community.pcss --config postcss.config.js --watch  --output css/community.min.css",
+    "js:watch": "onchange 'src/**/*.js' -- npm run js",
+    "js": "uglifyjs src/js/demo-data.js src/js/main.js --source-map \"url='bundle.min.js.map'\" --output js/bundle.min.js",
+    "watch": "npm-run-all css js && npm-run-all -p css:watch js:watch",
+    "build": "npm-run-all css js",
+    "browsersync": "browser-sync start --server --files 'css/*.css, js/*.js, *.html'",
+    "start": "npm-run-all --parallel watch browsersync"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "cpy-cli": "^2.0.0",
+    "csso": "^3.5.1",
+    "npm-run-all": "^4.1.3",
+    "onchange": "^5.1.0",
+    "postcss": "^7.0.5",
+    "postcss-cli": "^6.0.1",
+    "postcss-cssnext": "^3.1.0",
+    "postcss-csso": "^3.0.0",
+    "uglify-js": "^3.4.9"
+  },
+  "dependencies": {
+    "postcss-import": "^12.0.1"
+  }
+}

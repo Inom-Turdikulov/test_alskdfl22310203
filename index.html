@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Vegan / Vegetarian Community Shell</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,600,700|Quicksand:700" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/community.min.css" rel="stylesheet">
+</head>
+
+
+<body>
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><symbol id="icon-reply" viewBox="0 0 40 32"><title>reply</title><path d="M35 0h-30c-2.758 0-5 1.794-5 4v17.999c0 2.206 2.242 4 5 4h7.5v5.25c0 0.612 0.875 0.969 1.492 0.606l9.758-5.856h11.25c2.758 0 5-1.794 5-4v-17.999c0-2.206-2.242-4-5-4z"></path></symbol><symbol id="icon-pin" viewBox="0 0 32 32"><title>pin</title><path d="M16 19.429c0.786 0 1.548-0.089 2.286-0.268v11.696c0 0.31-0.113 0.577-0.339 0.804s-0.494 0.339-0.804 0.339h-2.286c-0.31 0-0.577-0.113-0.804-0.339s-0.339-0.494-0.339-0.804v-11.696c0.738 0.179 1.5 0.268 2.286 0.268zM16 0c2.524 0 4.679 0.893 6.464 2.679s2.678 3.94 2.678 6.464c0 2.524-0.893 4.679-2.678 6.464s-3.94 2.679-6.464 2.679c-2.524 0-4.679-0.893-6.464-2.679s-2.679-3.94-2.679-6.464 0.893-4.679 2.679-6.464c1.786-1.786 3.94-2.679 6.464-2.679zM16 4c0.167 0 0.304-0.054 0.411-0.161s0.161-0.244 0.161-0.411-0.054-0.304-0.161-0.411c-0.107-0.107-0.244-0.161-0.411-0.161-1.738 0-3.22 0.613-4.446 1.839s-1.839 2.708-1.839 4.446c0 0.167 0.054 0.304 0.161 0.411s0.244 0.161 0.411 0.161c0.167 0 0.304-0.054 0.411-0.161s0.161-0.244 0.161-0.411c0-1.417 0.503-2.628 1.509-3.634s2.217-1.509 3.634-1.509z"></path></symbol><symbol id="icon-arrow-top" viewBox="0 0 32 32"><title>arrow-top</title><path d="M20.434 32h-8.867c-1.229 0-2.217-0.839-2.217-1.882v-12.548h-7.126c-1.977 0-2.965-2.023-1.57-3.215l13.777-13.802c0.868-0.737 2.272-0.737 3.141 0l13.777 13.802c1.395 1.184 0.406 3.215-1.57 3.215h-7.127v12.548c0 1.043-0.988 1.882-2.217 1.882z"></path></symbol><symbol id="icon-arrow-down" viewBox="0 0 32 32"><title>arrow-down</title><path d="M11.566 0h8.867c1.229 0 2.217 0.839 2.217 1.882v12.548h7.127c1.977 0 2.965 2.023 1.57 3.215l-13.777 13.802c-0.868 0.737-2.272 0.737-3.141 0l-13.777-13.802c-1.395-1.184-0.406-3.215 1.57-3.215h7.126v-12.548c0-1.043 0.988-1.882 2.217-1.882z"></path></symbol></defs></svg>
+
+<main role="main">
+    <div class="container-fluid _mainwrapper"> <!-- Main wrapper limited to 1200px -->
+        <!-- This is ROOT rscss wrapper-->
+        <div class="shell-w">
+            <h1 class="t">Vegan / Vegetarian Community Shell</h1>
+
+            <div class="mapw">
+                <div class="map-w">
+                    <!-- Tabs with map -->
+                    <div class="content map-content -fullheight">
+                        <!-- Tabs -->
+                        <div class="tabs tabs-list">
+                            <div class="chrome-tabs">
+                                <ul class="nav chrome-tabs-content" id="tabsLinks" role="tablist">
+                                    <li class="chrome-tab chrome-tab-current nav-item">
+                                        <a class="chrome-tab-background" id="reviews" data-toggle="tab" href="#reviewsPane" role="tab" aria-controls="home" aria-selected="true">
+                                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                                <defs>
+                                                    <symbol id="chrome-tab-geometry-left" viewBox="0 0 214 29">
+                                                        <path d="M14.3 0.1L214 0.1 214 29 0 29C0 29 12.2 2.6 13.2 1.1 14.3-0.4 14.3 0.1 14.3 0.1Z"></path>
+                                                    </symbol>
+                                                    <symbol id="chrome-tab-geometry-right" viewBox="0 0 214 29">
+                                                        <use xlink:href="#chrome-tab-geometry-left"></use>
+                                                    </symbol>
+                                                    <clipPath id="crop">
+                                                        <rect class="mask" width="100%" height="100%" x="0"></rect>
+                                                    </clipPath>
+                                                </defs>
+                                                <svg width="50%" height="100%">
+                                                    <use xlink:href="#chrome-tab-geometry-left" width="214" height="29"
+                                                         class="chrome-tab-background" fill="#F1F1F5"></use>
+                                                    <use xlink:href="#chrome-tab-geometry-left" width="214" height="29"
+                                                         class="chrome-tab-shadow"></use>
+                                                </svg>
+                                                <g transform="scale(-1, 1)">
+                                                    <svg width="50%" height="100%" x="-100%" y="0">
+                                                        <use xlink:href="#chrome-tab-geometry-right" width="214" height="29"
+                                                             class="chrome-tab-background" fill="#F1F1F5"></use>
+                                                        <use xlink:href="#chrome-tab-geometry-right" width="214" height="29"
+                                                             class="chrome-tab-shadow"></use>
+                                                    </svg>
+                                                </g>
+                                            </svg>
+                                            <div class="chrome-tab-title">Reviews</div>
+                                        </a>
+
+                                    </li>
+                                    <li class="chrome-tab">
+                                        <a class="chrome-tab-background" id="shells" data-toggle="tab" href="#shellsPane" role="tab" aria-controls="profile" aria-selected="false">
+                                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                                <defs>
+                                                    <symbol id="chrome-tab-geometry-left" viewBox="0 0 214 29">
+                                                        <path d="M14.3 0.1L214 0.1 214 29 0 29C0 29 12.2 2.6 13.2 1.1 14.3-0.4 14.3 0.1 14.3 0.1Z"></path>
+                                                    </symbol>
+                                                    <symbol id="chrome-tab-geometry-right" viewBox="0 0 214 29">
+                                                        <use xlink:href="#chrome-tab-geometry-left"></use>
+                                                    </symbol>
+                                                    <clipPath id="crop">
+                                                        <rect class="mask" width="100%" height="100%" x="0"></rect>
+                                                    </clipPath>
+                                                </defs>
+                                                <svg width="50%" height="100%">
+                                                    <use xlink:href="#chrome-tab-geometry-left" width="214" height="29"
+                                                         class="chrome-tab-background" fill="#F1F1F5"></use>
+                                                    <use xlink:href="#chrome-tab-geometry-left" width="214" height="29"
+                                                         class="chrome-tab-shadow"></use>
+                                                </svg>
+                                                <g transform="scale(-1, 1)">
+                                                    <svg width="50%" height="100%" x="-100%" y="0">
+                                                        <use xlink:href="#chrome-tab-geometry-right" width="214" height="29"
+                                                             class="chrome-tab-background" fill="#F1F1F5"></use>
+                                                        <use xlink:href="#chrome-tab-geometry-right" width="214" height="29"
+                                                             class="chrome-tab-shadow"></use>
+                                                    </svg>
+                                                </g>
+                                            </svg>
+                                            <div class="chrome-tab-title">Shells</div>
+                                        </a>
+
+                                    </li>
+                                    <li class="chrome-tab">
+                                        <a class="chrome-tab-background" id="tips" data-toggle="tab" href="#messagesPane" role="tab" aria-controls="messages" aria-selected="false">
+                                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                                <defs>
+                                                    <symbol id="chrome-tab-geometry-left" viewBox="0 0 214 29">
+                                                        <path d="M14.3 0.1L214 0.1 214 29 0 29C0 29 12.2 2.6 13.2 1.1 14.3-0.4 14.3 0.1 14.3 0.1Z"></path>
+                                                    </symbol>
+                                                    <symbol id="chrome-tab-geometry-right" viewBox="0 0 214 29">
+                                                        <use xlink:href="#chrome-tab-geometry-left"></use>
+                                                    </symbol>
+                                                    <clipPath id="crop">
+                                                        <rect class="mask" width="100%" height="100%" x="0"></rect>
+                                                    </clipPath>
+                                                </defs>
+                                                <svg width="50%" height="100%">
+                                                    <use xlink:href="#chrome-tab-geometry-left" width="214" height="29"
+                                                         class="chrome-tab-background" fill="#F1F1F5"></use>
+                                                    <use xlink:href="#chrome-tab-geometry-left" width="214" height="29"
+                                                         class="chrome-tab-shadow"></use>
+                                                </svg>
+                                                <g transform="scale(-1, 1)">
+                                                    <svg width="50%" height="100%" x="-100%" y="0">
+                                                        <use xlink:href="#chrome-tab-geometry-right" width="214" height="29"
+                                                             class="chrome-tab-background" fill="#F1F1F5"></use>
+                                                        <use xlink:href="#chrome-tab-geometry-right" width="214" height="29"
+                                                             class="chrome-tab-shadow"></use>
+                                                    </svg>
+                                                </g>
+                                            </svg>
+                                            <div class="chrome-tab-title">Tips</div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-content" id="tabsContent">
+                                <div class="tab-pane fade show active" id="reviewsPane" role="tabpanel" aria-labelledby="reviews">
+                                    <div class="pane-default">
+                                        <h2 class="t">Super Vegan</h2>
+                                        <p>Love their kale, with kale</p>
+                                        <p>Love their kale, try the kale</p>
+                                        <p>For real kale is king</p>
+                                        <p>You kaleing me Lisa!</p>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="shellsPane" role="tabpanel" aria-labelledby="shells">
+                                    <div class="pane-default">
+                                        <h2 class="t">Super Vegan 2</h2>
+                                        <p>Love their kale, with kale</p>
+                                        <p>Love their kale, try the kale</p>
+                                        <p>For real kale is king</p>
+                                        <p>You kaleing me Lisa!</p>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="messagesPane" role="tabpanel" aria-labelledby="contact-tab">
+                                    <div class="pane-default">
+                                        <h2 class="t">Super Vegan 3</h2>
+                                        <p>Love their kale, with kale</p>
+                                        <p>Love their kale, try the kale</p>
+                                        <p>For real kale is king</p>
+                                        <p>You kaleing me Lisa!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Map -->
+                    </div>
+                    <div class="embed-responsive embed-responsive-21by9 -embed-responsive-xs-16by9">
+                        <div class="embed-responsive-item">
+                            <div class="map map-wide" id="googleMap"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Map Legend (dynamically generated)-->
+            <div class="legend map-legend">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <p class="legend-label"><i class="icon -green" aria-hidden="true"></i>100% Vegan</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <p class="legend-label"><i class="icon -yellow" aria-hidden="true"></i>Vegaterian</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <p class="legend-label"><i class="icon -orange" aria-hidden="true"></i>Not Vegaterian (Decent vegan)</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <p class="legend-label"><i class="icon -blue" aria-hidden="true"></i>(Mostly Vegan) Vegaterian</p>
+                    </div>
+                    <div class="col-sm-4">
+                    <p class="legend-label"><i class="icon -red" aria-hidden="true"></i>Not Vegaterian (Decent vegaterian)</p>
+                </div>
+                </div>
+            </div>
+
+            <!-- Shell buttons -->
+            <div class="actions actions-buttons">
+                <div class="row">
+                    <div class="col-sm-6 btnitem">
+                        <button type="button" class="btn btn-action1">Browse Everyone’s Shells</button>
+                    </div>
+                    <div class="col-sm-6 btnitem">
+                        <button type="button" class="btn btn-action2">Add Your Shell</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Comments list -->
+            <div class="comments comments-list">
+                <!-- Comment 1 -->
+                <div class="media">
+                    <div class="comment-arrows">
+                        <button class="btn btn-vote" aria-label="upvote" data-toggle="upvote-button" aria-pressed="false">
+                            <svg class="icon icon-arrowtop"><use xlink:href="#icon-arrow-top"></use></svg>
+                        </button>
+                        <button class="btn btn-vote" aria-label="downvote" data-toggle="downvote-button" aria-pressed="false" data-click-id="downvote">
+                            <svg class="icon icon-arrowdown"><use xlink:href="#icon-arrow-down"></use></svg>
+                        </button>
+                    </div>
+                    <div class="media-body comment-w js-commentw">
+                        <div class="comment-head js-commenthead">
+                            <a class="t tooltip-white" href="#" data-toggle="tooltip" data-html="true" title="<div class='media'> <img class='mr-3' src='img/herald.jpg' class='img-thumbnail' width='30px' height='30px'> <div class='media-body'> <p class='mt-0 t'>Sir Herald</p> <p>N days ago</p> </div> </div>">Sir Herlad</a>
+                            <span class="pointsnum js-points-num" data-point-value="0">0</span
+                            ><span class="pointtext js-points-text">Points</span>
+                            <time datetime="2018-07-07T20:00:00">N days ago</time>
+                        </div>
+                        <div class="comment-content content">
+                            <p><a href="#">Remove</a> Bob’s Burgers here - it’s a burger spot! Lorem Ipsum Dolor Remove Bob’s Burgers
+                                here - it’s a burger spot! Lorem Ipsum Dolor Lorem Ipsum Dolor</p>
+                        </div>
+                        <div class="comment-footer footer js-replywrapper">
+                            <button class="btn btn-reply"><svg class="icon icon-reply"><use xlink:href="#icon-reply"></use></svg>Reply
+                            </button>
+                        </div>
+
+                        <!-- Comment 1.1 -->
+                        <div class="media">
+                            <div class="comment-arrows">
+                                <button class="btn btn-vote" aria-label="upvote" data-toggle="upvote-button" aria-pressed="false">
+                                    <svg class="icon icon-arrowtop"><use xlink:href="#icon-arrow-top"></use></svg>
+                                </button>
+                                <button class="btn btn-vote" aria-label="downvote" data-toggle="downvote-button" aria-pressed="false" data-click-id="downvote">
+                                    <svg class="icon icon-arrowdown"><use xlink:href="#icon-arrow-down"></use></svg>
+                                </button>
+                            </div>
+                            <div class="media-body comment-w js-commentw">
+                                <div class="comment-head js-commenthead">
+                                    <a class="t tooltip-white" href="#" data-toggle="tooltip" data-html="true" title="<div class='media'> <img class='mr-3' src='img/herald.jpg' class='img-thumbnail' width='30px' height='30px'> <div class='media-body'> <p class='mt-0 t'>Sir Herald</p> <p>N days ago</p> </div> </div>">Sir Herlad</a>
+                                    <span class="pointsnum js-points-num" data-point-value="0">0</span>
+                                    <span class="pointtext js-points-text">Points</span>
+                                    <time datetime="2018-07-07T20:00:00">N days ago</time>
+                                </div>
+                                <div class="comment-content content">
+                                    <p><a href="#">Remove</a> Bob’s Burgers here - it’s a burger spot! Lorem Ipsum Dolor Remove Bob’s Burgers
+                                        here - it’s a burger spot! Lorem Ipsum Dolor Lorem Ipsum Dolor</p>
+                                </div>
+                                <div class="comment-footer footer js-replywrapper">
+                                    <button class="btn btn-reply"><svg class="icon icon-reply"><use xlink:href="#icon-reply"></use></svg>Reply
+                                    </button>
+                                </div>
+
+                                <!-- Comment 1.1.1 -->
+                                <div class="media">
+                                    <div class="comment-arrows">
+                                        <button class="btn btn-vote" aria-label="upvote" data-toggle="upvote-button" aria-pressed="false">
+                                            <svg class="icon icon-arrowtop"><use xlink:href="#icon-arrow-top"></use></svg>
+                                        </button>
+                                        <button class="btn btn-vote" aria-label="downvote" data-toggle="downvote-button" aria-pressed="false" data-click-id="downvote">
+                                            <svg class="icon icon-arrowdown"><use xlink:href="#icon-arrow-down"></use></svg>
+                                        </button>
+                                    </div>
+                                    <div class="media-body comment-w js-commentw">
+                                        <div class="comment-head js-commenthead">
+                                            <a class="t tooltip-white" href="#" data-toggle="tooltip" data-html="true" title="<div class='media'> <img class='mr-3' src='img/herald.jpg' class='img-thumbnail' width='30px' height='30px'> <div class='media-body'> <p class='mt-0 t'>Sir Herald</p> <p>N days ago</p> </div> </div>">Sir Herlad</a>
+                                            <span class="pointsnum js-points-num" data-point-value="0">0</span>
+                                            <span class="pointtext js-points-text">Points</span>
+                                            <time datetime="2018-07-07T20:00:00">N days ago</time>
+                                        </div>
+                                        <div class="comment-content content">
+                                            <p><a href="#">Remove</a> Bob’s Burgers here - it’s a burger spot! Lorem Ipsum Dolor Remove Bob’s Burgers
+                                                here - it’s a burger spot! Lorem Ipsum Dolor Lorem Ipsum Dolor</p>
+                                        </div>
+                                        <div class="comment-footer footer js-replywrapper">
+                                            <button class="btn btn-reply"><svg class="icon icon-reply"><use xlink:href="#icon-reply"></use></svg>Reply
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /End Comment 1.1.1 -->
+                            </div>
+                        </div>
+                        <!-- /End Comment 1.1 -->
+                    </div>
+                </div>
+                <!-- /End Comment 1 -->
+
+                <!-- Comment 2 -->
+                <div class="media">
+                    <div class="comment-arrows">
+                        <button class="btn btn-vote" aria-label="upvote" data-toggle="upvote-button" aria-pressed="false">
+                            <svg class="icon icon-arrowtop"><use xlink:href="#icon-arrow-top"></use></svg>
+                        </button>
+                        <button class="btn btn-vote" aria-label="downvote" data-toggle="downvote-button" aria-pressed="false" data-click-id="downvote">
+                            <svg class="icon icon-arrowdown"><use xlink:href="#icon-arrow-down"></use></svg>
+                        </button>
+                    </div>
+                    <div class="media-body comment-w js-commentw">
+                        <div class="comment-head js-commenthead">
+                            <a class="t tooltip-white" href="#" data-toggle="tooltip" data-html="true" title="<div class='media'> <img class='mr-3' src='img/herald.jpg' class='img-thumbnail' width='30px' height='30px'> <div class='media-body'> <p class='mt-0 t'>Sir Herald</p> <p>N days ago</p> </div> </div>">Sir Herlad</a>
+                            <span class="pointsnum js-points-num" data-point-value="0">0</span>
+                            <span class="pointtext js-points-text">Points</span>
+                            <time datetime="2018-07-07T20:00:00">N days ago</time>
+                        </div>
+                        <div class="comment-content content">
+                            <p><a href="#">Remove</a> Bob’s Burgers here - it’s a burger spot! Lorem Ipsum Dolor Remove Bob’s Burgers
+                                here - it’s a burger spot! Lorem Ipsum Dolor Lorem Ipsum Dolor</p>
+                        </div>
+                        <div class="comment-footer footer js-replywrapper">
+                            <button class="btn btn-reply"><svg class="icon icon-reply"><use xlink:href="#icon-reply"></use></svg>Reply
+                            </button>
+                        </div>
+
+                        <!-- Comment 2.1 -->
+                        <div class="media">
+                            <div class="comment-arrows">
+                                <button class="btn btn-vote" aria-label="upvote" data-toggle="upvote-button" aria-pressed="false">
+                                    <svg class="icon icon-arrowtop"><use xlink:href="#icon-arrow-top"></use></svg>
+                                </button>
+                                <button class="btn btn-vote" aria-label="downvote" data-toggle="downvote-button" aria-pressed="false" data-click-id="downvote">
+                                    <svg class="icon icon-arrowdown"><use xlink:href="#icon-arrow-down"></use></svg>
+                                </button>
+                            </div>
+                            <div class="media-body comment-w js-commentw">
+                                <div class="comment-head js-commenthead">
+                                    <a class="t tooltip-white" href="#" data-toggle="tooltip" data-html="true" title="<div class='media'> <img class='mr-3' src='img/herald.jpg' class='img-thumbnail' width='30px' height='30px'> <div class='media-body'> <p class='mt-0 t'>Sir Herald</p> <p>N days ago</p> </div> </div>">Sir Herlad</a>
+                                    <span class="pointsnum js-points-num" data-point-value="0">0</span>
+                                    <span class="pointtext js-points-text">Points</span>
+                                    <time datetime="2018-07-07T20:00:00">N days ago</time>
+                                </div>
+                                <div class="comment-content content">
+                                    <p><a href="#">Remove</a> Bob’s Burgers here - it’s a burger spot! Lorem Ipsum Dolor Remove Bob’s Burgers
+                                        here - it’s a burger spot! Lorem Ipsum Dolor Lorem Ipsum Dolor</p>
+                                </div>
+                                <div class="comment-footer footer js-replywrapper">
+                                    <button class="btn btn-reply"><svg class="icon icon-reply"><use xlink:href="#icon-reply"></use></svg>Reply
+                                    </button>
+                                </div>
+
+                                <!-- Comment 2.1.1 -->
+                                <div class="media">
+                                    <div class="comment-arrows">
+                                        <button class="btn btn-vote" aria-label="upvote" data-toggle="upvote-button" aria-pressed="false">
+                                            <svg class="icon icon-arrowtop"><use xlink:href="#icon-arrow-top"></use></svg>
+                                        </button>
+                                        <button class="btn btn-vote" aria-label="downvote" data-toggle="downvote-button" aria-pressed="false" data-click-id="downvote">
+                                            <svg class="icon icon-arrowdown"><use xlink:href="#icon-arrow-down"></use></svg>
+                                        </button>
+                                    </div>
+                                    <div class="media-body comment-w js-commentw">
+                                        <div class="comment-head js-commenthead">
+                                            <a class="t tooltip-white" href="#" data-toggle="tooltip" data-html="true" title="<div class='media'> <img class='mr-3' src='img/herald.jpg' class='img-thumbnail' width='30px' height='30px'> <div class='media-body'> <p class='mt-0 t'>Sir Herald</p> <p>N days ago</p> </div> </div>">Sir Herlad</a>
+                                            <span class="pointsnum js-points-num" data-point-value="0">0</span>
+                                            <span class="pointtext js-points-text">Points</span>
+                                            <time datetime="2018-07-07T20:00:00">N days ago</time>
+                                        </div>
+                                        <div class="comment-content content">
+                                            <p><a href="#">Remove</a> Bob’s Burgers here - it’s a burger spot! Lorem Ipsum Dolor Remove Bob’s Burgers
+                                                here - it’s a burger spot! Lorem Ipsum Dolor Lorem Ipsum Dolor</p>
+                                        </div>
+                                        <div class="comment-footer footer js-replywrapper">
+                                            <button class="btn btn-reply"><svg class="icon icon-reply"><use xlink:href="#icon-reply"></use></svg>Reply
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /End Comment 2.1.1 -->
+                            </div>
+                        </div>
+                        <!-- /End Comment 2.1 -->
+                    </div>
+                </div>
+                <!-- /End Comment 2 -->
+            </div>
+        </div>
+    </div>
+</main>
+
+<div class="replyform-w _hidden" data-toggle="reply-textarea">
+    <form action="">
+        <div class="reply-form">
+            <textarea class="form-control text" name="text" id="commentText" cols="30" rows="8" placeholder="Your reply"></textarea>
+            <div class="toolbar action-buttons">
+                <div class="actions">
+                    <button class="btn-small js-cancel">Cancel</button>
+                    <button type="submit" class="btn-small -style1 js-submit" disabled>Reply</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+<script src="js/vendor/modernizr-3.6.0.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"
+        integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.slim.min.js"><\/script>')</script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.js"
+        integrity="sha256-82SVOjZ1qLdrq8VUmAisFapCSq1bpgavtXQaDGLPAAg=" crossorigin="anonymous"></script>
+<script defer src="js/bundle.min.js"></script>
+</body>
+</html>
